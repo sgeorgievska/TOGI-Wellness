@@ -179,6 +179,11 @@ h6 {
 # Intro Section
 --------------------------------------------------------------*/
 
+#main {
+  color: #ddd; 
+  font-size: 45pt;
+}
+
 #intro {
   display: table;
   width: 100%;
@@ -388,10 +393,10 @@ h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: #eee;
   font-family: QuiteMagical;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 17pt;
   text-transform: uppercase;
   outline: none;
 }
@@ -699,6 +704,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
+#about .icon img {
+  height: 45px; 
+  width: auto;
+  bottom: 8px;
+  right: 18px;
+  position: absolute;
+}
+
 #about .about-col i {
   font-size: 36px;
   line-height: 1;
@@ -756,8 +769,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 30px;
 }
 
-#services .icon {
+#services .icon img{
   float: left;
+  width: 50px;
+  height: auto;
 }
 
 #services .icon i {
@@ -819,8 +834,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 25px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #ddd;
+  color: #ddd;
+  font-weight: bolder;
 }
 
 #call-to-action .cta-btn:hover {
@@ -1262,9 +1278,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0;
 }
 
+#contact .table {
+  position: relative;
+  height: 300px;
+}
+
 #contact .contact-info {
+  position: absolute;
   margin-bottom: 20px;
   text-align: center;
+  width: 100%;
+  left: 180px;
 }
 
 #contact .contact-info i {
@@ -1274,7 +1298,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ddd;
 }
 
-#contact .contact-info address,
 #contact .contact-info p {
   margin-bottom: 0;
   color: #000;
@@ -1296,7 +1319,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ddd;
 }
 
-#contact .contact-address,
 #contact .contact-phone,
 #contact .contact-email {
   margin-bottom: 20px;
@@ -1345,6 +1367,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
+  font-size: 18pt !important;
   background: #ddd;
   border: 0;
   padding: 10px 30px;
@@ -1525,21 +1548,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 @media (min-width: 768px) {
-  #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
     padding: 20px 0;
   }
 
   #contact .contact-phone {
-    border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
-  }
-}
-
-@media (min-width: 992px) {
-  #testimonials .testimonial-item p {
-    width: 80%;
   }
 }
 
@@ -1563,6 +1578,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 768px) {
+  #main {
+    font-size: 30pt !important;
+  }
+
   .back-to-top {
     bottom: 15px;
   }
@@ -1585,5 +1604,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #mobile-nav-toggle {
     display: inline;
+  }
+
+  #contact .contact-info {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    left: 0;
   }
 }
